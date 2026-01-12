@@ -15,7 +15,7 @@ def log_event(message):
     with open(LOG, "a") as file:
         file.write(message + "\n")
 
-# this will continuosly monitor battery while charging
+# this will continuously monitor battery while charging
 while True:
     battery = psutil.sensors_battery()
 
