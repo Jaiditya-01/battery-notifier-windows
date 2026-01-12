@@ -4,7 +4,7 @@ import time
 import winsound
 from datetime import datetime
 
-MAX = 65 # % of battery
+MAX = 85 # % of battery
 INTERVAL = 60 # seconds of checking
 LOG = "battery_log.txt"
 
@@ -29,6 +29,10 @@ while True:
 
     if previous is None:
         previous = plugged
+        if plugged:
+            log_event(f"[{current_time}] Charger Plugged In Already")
+        else:
+            log_event(f"[{current_time}] Charger Unplugged")
 
     if plugged != previous:
         if plugged:
