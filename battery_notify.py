@@ -44,7 +44,7 @@ while True:
         
         notification.notify(
             title="Battery Alert !",
-            message=f"Battery reached {percent}%. Please unplug the charger.",
+            message=f"Battery Reached {percent}%. Please Unplug the Charger.",
             timeout=10
         )
 
