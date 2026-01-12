@@ -4,7 +4,7 @@ import time
 import winsound
 from datetime import datetime
 
-MAX = 85 # % of battery
+MAX = 65 # % of battery
 INTERVAL = 60 # seconds of checking
 LOG = "battery_log.txt"
 
