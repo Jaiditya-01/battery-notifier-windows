@@ -44,7 +44,6 @@ while True:
 
     # sent message until unplug the charger
     if plugged and percent >= MAX:
-        winsound.Beep(1000, 800)
         
         notification.notify(
             title="Battery Alert !",
