@@ -4,7 +4,7 @@ import time
 import winsound
 from datetime import datetime
 
-MAX = 85 # % of battery
+MAX = 87 # % of battery
 INTERVAL = 60 # seconds of checking
 LOG = "battery_log.txt"
 
@@ -42,13 +42,13 @@ while True:
 
         previous = plugged
 
-    # sent message until unplug the charger
+    # sent message until unplug the charger in normal notification
     if plugged and percent >= MAX:
         
         notification.notify(
             title="Battery Alert !",
             message=f"Battery Reached {percent}%. Please Unplug the Charger.",
-            timeout=10
+            timeout=7
         )
 
     time.sleep(INTERVAL)
