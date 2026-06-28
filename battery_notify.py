@@ -11,7 +11,7 @@ import psutil
 from plyer import notification
 
 
-DEFAULT_HIGH_PERCENT = 87
+DEFAULT_HIGH_PERCENT = 87 # change this according to your suitablility
 DEFAULT_LOW_PERCENT = 20
 DEFAULT_INTERVAL_SECONDS = 60
 DEFAULT_ALERT_COOLDOWN_SECONDS = 300
