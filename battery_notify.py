@@ -1,7 +1,7 @@
 import argparse
 import csv
 import time
-import winsound
+import winsound # for notifications
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
