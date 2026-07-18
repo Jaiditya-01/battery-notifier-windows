@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import Any
 
 import psutil
-from plyer import notification
+from plyer import notification # to push the notification
 
 
 DEFAULT_HIGH_PERCENT = 87 # change this according to your suitablility
