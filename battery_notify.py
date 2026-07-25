@@ -225,4 +225,4 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    main() # calls the final function
