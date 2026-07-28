@@ -8,14 +8,21 @@ from pathlib import Path
 from typing import Any
 
 import psutil
-from plyer import notification # to push the notification
+from plyer import notification 
+
+from pathlib import Path
+
+# This gets the exact folder where your python script is saved
+SCRIPT_DIR = Path(__file__).resolve().parent
+
+# This creates the log file in the exact same folder as your script
+DEFAULT_LOG_FILE = SCRIPT_DIR / "battery_log.csv"
 
 
-DEFAULT_HIGH_PERCENT = 87 # change this according to your suitablility
-DEFAULT_LOW_PERCENT = 20
+DEFAULT_HIGH_PERCENT = 85 # change this according to your suitablility
+DEFAULT_LOW_PERCENT = 30
 DEFAULT_INTERVAL_SECONDS = 60
 DEFAULT_ALERT_COOLDOWN_SECONDS = 300
-DEFAULT_LOG_FILE = "battery_log.csv" # rename as per your need, for accessing the logs
 
 
 @dataclass(frozen=True)
