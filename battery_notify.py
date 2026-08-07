@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import Any
 
 import psutil
-from plyer import notification 
+from plyer import notification #for accessing the windows notifications
 
 from pathlib import Path
 
